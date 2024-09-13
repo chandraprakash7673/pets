@@ -1,0 +1,158 @@
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/cute-puppy-group-sitting-looking-camera-indoors-generated-by-artificial-intelligence\ 1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh; /* Make the section height responsive */
+    color: white;
+    padding: 2rem; /* Add padding for better spacing */
+    text-align: center; /* Center text for better readability on small screens */
+}
+
+.aboutus h1 {
+    font-size: 8vw; /* Use vw to make the font size responsive */
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+
+
+
+.aboutus-page2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 123, 123);
+    padding: 5vw; /* Use flexible padding */
+    gap: 3vw; /* Adjust gap for responsiveness */
+}
+
+.aboutus-page2 h1 {
+    font-family: "Caveat", cursive;
+    font-size: 7vw; /* Flexible font size */
+}
+
+.aboutus-page22 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 4vw;
+    padding: 2vw;
+}
+
+.aboutus-page22.reverse {
+    flex-direction: row-reverse;
+}
+
+.aboutus-page23 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    flex: 1;
+    padding: 2vw;
+    
+}
+
+.aboutus-page23 h2 {
+    font-family: "Caveat", cursive;
+    font-size: 4vw;
+}
+.aboutus-page23 p {
+      color: aliceblue;
+}
+.image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image {
+    width: 100%; /* Make the circle take full width of the container */
+    height: auto;
+    z-index: 1;
+}
+
+.main-image {
+    position: absolute; /* Position the image on top of the circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image within the circle */
+    width: 90%; /* Adjust width to fit inside the circle */
+    height: auto;
+    z-index: 2; /* Ensure the main image is on top of the circle */
+}
+
+.aboutus-bottom {
+    font-family: "Caveat", cursive;
+    font-size: 5vw; /* Responsive font size */
+    background-color: antiquewhite;
+    background-image: url("../../assets/images/background-about.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    gap: 7vw;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .aboutus {
+        height: 50vh;
+        font-size: 8vw;
+    }
+
+    .aboutus h1 {
+        font-size: 10vw;
+    }
+
+    .aboutus-page22 {
+        flex-direction: column;
+    }
+
+    .aboutus-page23 h2 {
+        font-size: 5vw;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+
+    .aboutus-bottom {
+        font-size: 6vw;
+        gap: 10vw;
+    }
+}
+
+/* Media Queries for Very Small Screens */
+@media (max-width: 480px) {
+    .aboutus {
+        height: 40vh;
+        font-size: 6vw;
+    }
+
+    .aboutus h1 {
+        font-size: 8vw;
+    }
+
+    .aboutus-page2 h1 {
+        font-size: 10vw;
+    }
+
+    .aboutus-page23 h2 {
+        font-size: 6vw;
+    }
+
+    .aboutus-bottom {
+        font-size: 8vw;
+    }
+}

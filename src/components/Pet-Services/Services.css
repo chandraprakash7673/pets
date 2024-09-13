@@ -1,0 +1,128 @@
+.services{
+    display:flex;
+    flex-direction: column;
+}
+
+.services-page1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffdbfb;
+}
+
+.services-page1 div {
+    display: flex;
+    flex-direction: column;
+    padding-right:5%;
+    gap:20px;
+}
+
+.ourservices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    background-color: palevioletred;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+   
+}
+
+.services-page1 div h2{
+    font-family: "Roboto Mono", monospace;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.services-page1 div p{
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+}
+
+
+ 
+
+/* -------------------------Services page-------------------------- */
+
+
+
+
+  .services-page2 {
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("./image/background1.png"); */
+    background-color: #ffdbfb;
+    padding: 20px;
+}
+
+.services-page22 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding: 30px 120px;
+    position: relative;
+}
+
+.services-page22 img:first-child {
+    position: relative;
+    z-index: 2;
+    border-radius: 40px;
+}
+
+.services-page22 img:nth-child(2) {
+    position: absolute;
+    border-radius: 20px;
+    left: 2%;
+    bottom: -20%;
+    z-index: 1;
+}
+
+.services-page22 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+
+.services-page22 h2 {
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+    color: red;
+    margin: 0;
+}
+
+.services-page22 p {
+    color: red;
+}
+
+.services-page22 button {
+    align-self: flex-start;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.services-page22 button:hover {
+    background-color: darkred;
+}
+
+.services-page22.reverse {
+    flex-direction: row-reverse;
+}
+
+.services-page22.reverse img:nth-child(2) {
+    left: auto;
+    right: 2%;
+}
+
+.services-page22.low img:nth-child(2){
+    top:-30%;
+    left:20%;
+}

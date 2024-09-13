@@ -1,0 +1,179 @@
+   body {
+    background-color: rgb(255, 251, 190); /* Light red background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .essentials {
+    text-align: center;
+  }
+  
+  .header {
+    
+    background-image: url("../../assets/images/JEMA\ VIVI\ 022-04\ 7.png");
+    background-color: linear-gradient(180deg, rgba(249, 6, 46, 0.348) 0%, rgb(255, 255, 255) 100%);
+
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .pets-page, .animals-page {
+    padding:30px;
+    margin: 20px;
+  }
+  
+  .pets-page h2, .animals-page h2 {
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .animals-page h3{
+    color:#ffdbfb;
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+  }
+
+  .dog-content h3{
+    font-family:  Arial, sans-serif;
+    font-size: 20px;
+  }
+  
+  
+  .pets-container, .dog-container, .products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: cream;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  .items-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 70px; /* Space between images */
+  }
+
+  .items-wrapper.first{
+    gap:70px;  
+  }
+
+   
+  
+  .pet-card, .review-card {
+    /* flex: 0 0 calc(20% - 20px); Adjust for gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+  
+  .pet-card img, .review-card img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    background-color: #f0e68c; 
+    
+  }
+  
+  .pet-card img {
+    border-radius: 50%;
+    border:1px solid red;
+     
+  }
+  
+  .review-card img {
+    border-radius: 10px;
+    
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+  .dog-container, .products-container {
+    background-color: cream;
+    border-radius: 10px;
+  }
+  
+  .product-img {
+    border-radius: 10px;
+  }
+  
+ 
+  
+  .dog-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .product-content{
+    color:red;
+    padding: 10px;
+    justify-content:flex-start;
+  }
+  
+  .pets-container .pet-img {
+    border-radius: 50%;
+  }
+  
+  .review-card .dog-img, .review-card .product-img {
+    border-radius: 10px;
+  }
+  
+  .pets-container, .dog-container, .products-container {
+    position: relative;
+  }
+
+
+  .products-container.bottom{
+    background-color: #ffdbfb;
+    padding:0px;
+  }
+  
+  
+  .pets-container button, .dog-container button, .products-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .pets-container button:first-child, .dog-container button:first-child, .products-container button:first-child {
+    left: 0;
+  }
+  
+  .pets-container button:last-child, .dog-container button:last-child, .products-container button:last-child {
+    right: 0;
+  }
+  
+
+
+
+
+
+
+
+
+ 
